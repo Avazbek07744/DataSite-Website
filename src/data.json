@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Dasturlash foundation",
+        "duration": "3.5 oy",
+        "category": [
+            "Dasturlash"
+        ],
+        "type": "Bootcamp"
+    },
+    {
+        "name": "Front-End",
+        "duration": "8 oy",
+        "category": [
+            "Dasturlash"
+        ],
+        "type": "Standard"
+    },
+    {
+        "name": "Back-End",
+        "duration": "8 oy",
+        "category": [
+            "Dasturlash"
+        ],
+        "type": "Standard"
+    },
+    {
+        "name": "Node.js",
+        "duration": "8 oy",
+        "category": [
+            "Dasturlash"
+        ],
+        "type": "Standard"
+    },
+    {
+        "name": "IT kids",
+        "duration": "8 oy",
+        "category": [
+            "Dasturlash"
+        ],
+        "type": "Standard"
+    },
+    {
+        "name": "Kompyuter savodxonlik",
+        "duration": "3 oy",
+        "category": [
+            "Kompyuter"
+        ],
+        "type": "Standard"
+    },
+    {
+        "name": "Buhgalteriya",
+        "duration": "4 oy",
+        "category": [
+            "Hisobkitob"
+        ],
+        "type": "Standard"
+    },
+    {
+        "name": "Ingliz Tili",
+        "duration": "6 oy",
+        "category": [
+            "Til"
+        ],
+        "type": "Standard"
+    },
+    {
+        "name": "Kareys Tili",
+        "duration": "6 oy",
+        "category": [
+            "Til"
+        ],
+        "type": "Standard"
+    },
+    {
+        "name": "Xitoy Tili",
+        "duration": "3 oy",
+        "category": [
+            "Til"
+        ],
+        "type": "Standard"
+    },
+    {
+        "name": "Nemis Tili",
+        "duration": "6 oy",
+        "category": [
+            "Til"
+        ],
+        "type": "Standard"
+    },
+    {
+        "name": "Fransuz Tili",
+        "duration": "6 oy",
+        "category": [
+            "Til"
+        ],
+        "type": "Standard"
+    }
+]

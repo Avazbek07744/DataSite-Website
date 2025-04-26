@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer base {
+    .bace{
+        @apply max-w-[1250px] mx-auto px-5 md:p-4 xl:p-0
+    }
+    .color{
+        @apply text-[#bc8e5b]
+    }
+}
