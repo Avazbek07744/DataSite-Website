@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import data from "../data.json";
+import logo from "../assets/logo.svg"
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [coursesMenuOpen, setCoursesMenuOpen] = useState(false);
     const [showAllCourses, setShowAllCourses] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1024);
-
     const courses = data;
 
     const handleMenuToggle = (e) => {
@@ -51,7 +51,7 @@ const Header = () => {
             <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 h-20">
                 <div className="flex items-center gap-5">
                     <Link to="/" className="text-xl font-bold">
-                        Logo
+                        <img className='w-40' src={logo} alt="" />
                     </Link>
                     <button
                         onClick={handleCoursesMenuToggle}
@@ -59,7 +59,7 @@ const Header = () => {
                     >
                         Kurslar
                         {
-                            coursesMenuOpen ? <i class="fa-regular fa-arrow-up"></i>:<i class="fa-regular fa-arrow-down"></i>
+                            coursesMenuOpen ? <i className="fa-regular fa-arrow-up"></i> : <i className="fa-regular fa-arrow-down"></i>
                         }
                     </button>
                 </div>
@@ -85,19 +85,19 @@ const Header = () => {
                 <div className="flex lg:hidden">
                     <button
                         onClick={handleMenuToggle}
-                        className="w-9 h-9 border border-gray-300 rounded-full flex flex-col justify-center items-center gap-1 hover:border-[#bc8e5b]"
+                        className='group w-9 h-9 pl-[9px] border border-transparent hover:border-gray-400 rounded-full transition-all duration-300 ease-in-out'
                     >
                         {menuOpen ? (
-                            <div className="relative w-5 h-5">
-                                <span className="absolute w-full h-0.5 bg-black rotate-45"></span>
-                                <span className="absolute w-full h-0.5 bg-black -rotate-45"></span>
+                            <div className="relative w-4 h-4 top-2">
+                                <span className="absolute top-0 left-0 w-4 border-b-[3px] rounded-xl border-black rotate-45 group-hover:border-red-700 transition-transform duration-500"></span>
+                                <span className="absolute top-0 left-0 w-4 border-b-[3px] rounded-xl border-black -rotate-45 group-hover:border-red-700 transition-transform duration-500"></span>
                             </div>
                         ) : (
-                            <>
-                                <span className="block w-5 h-0.5 bg-black"></span>
-                                <span className="block w-5 h-0.5 bg-black"></span>
-                                <span className="block w-4 h-0.5 bg-black"></span>
-                            </>
+                            <div>
+                                <span className='block border-b-[3px] rounded-xl w-4 mb-1 border-black group-hover:border-red-700 transition-all duration-300'></span>
+                                <span className='block border-b-[3px] rounded-xl w-4 mb-1 border-black group-hover:border-red-700 transition-all duration-300'></span>
+                                <span className='block border-b-[3px] rounded-xl w-3 border-black group-hover:border-red-700 transition-all duration-300'></span>
+                            </div>
                         )}
                     </button>
                 </div>
@@ -108,8 +108,8 @@ const Header = () => {
                     {navLinks.map((link, idx) => (
                         <Link
                             key={idx}
-                            className="text-xl font-semibold hover:text-[#bc8e5b]"
-                            to={link.to}
+                            className="text-xl font-semibold color border-b-2"
+                            to="#"
                         >
                             {link.label}
                         </Link>
